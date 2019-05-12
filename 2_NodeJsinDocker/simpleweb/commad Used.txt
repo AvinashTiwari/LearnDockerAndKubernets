@@ -1,0 +1,10 @@
+
+(1) Createing tag
+docker build -t qwe123kids/simpleweb .
+
+(2)
+ docker run -p 8080:8080 qwe123kids/simpleweb
+https://github.com/docker/for-win/issues/573
+
+(3)
+winpty docker run -it qwe123kids/simpleweb sh

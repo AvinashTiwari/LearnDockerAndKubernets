@@ -1,5 +1,6 @@
-FROM  node:6.14
-
+FROM  node:alpine
+WORKDIR /usr/app
+COPY ./ ./
 RUN npm install
 
 CMD ["npm", "start"]
