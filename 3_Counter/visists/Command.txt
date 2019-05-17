@@ -6,3 +6,9 @@ docker run qwe123kids/visits
 
 docker run redis
 
+docker-compose up
+
+docker-compose up -d (run in background)
+
+docker-compose down
+
