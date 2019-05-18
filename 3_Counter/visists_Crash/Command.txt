@@ -1,8 +1,8 @@
 docker build .
 
-docker build -t qwe123kids/visits:latest .
+docker build -t qwe123kids/visits_crash:latest .
 
-docker run qwe123kids/visits
+docker run qwe123kids/visits_crash
 
 docker run redis
 
@@ -12,3 +12,6 @@ docker-compose up -d (run in background)
 
 docker-compose down
 
+docker-compose up --build
+
+docker-compose ps

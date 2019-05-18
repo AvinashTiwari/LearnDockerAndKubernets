@@ -12,3 +12,4 @@ docker-compose up -d (run in background)
 
 docker-compose down
 
+docker-compose up --build
