@@ -9,3 +9,6 @@ docker run -p 3000:3000 9468382204fc
 docker run -p 3000:3000 -v $(pwd):/app ea16682caf8f
 
 docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app ea16682caf8f
+
+ MSYS_NO_PATHCONV=1 docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app ea16682caf8f
+
