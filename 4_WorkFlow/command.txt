@@ -12,3 +12,7 @@ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app ea16682caf8f
 
  MSYS_NO_PATHCONV=1 docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app ea16682caf8f
 
+docker-compose up
+
+ docker run 9feb64c787ac npm run test
+
