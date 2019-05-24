@@ -16,3 +16,5 @@ docker-compose up
 
  docker run 9feb64c787ac npm run test
 
+ docker attach a444eab8ed8b
+
