@@ -7,9 +7,9 @@ const app = express();
 app.use(cors)
 app.use(bodyParser.json())
 
-const {pool} = require('pg')
+const {Pool} = require('pg')
 
-const pgClient = new pool({
+const pgClient = new Pool({
 user: keys.pgUSER,
 host: keys.pgHOST,
 database: keys.pgDatabase,
