@@ -1,3 +1,5 @@
 docker build -f Dockerfile.dev .
 
 docker run caef78346d3b
+
+docker-compose up --build
