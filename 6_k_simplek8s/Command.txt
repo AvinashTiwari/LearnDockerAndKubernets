@@ -1,0 +1,10 @@
+kubectl apply -f client-pod.yaml
+kubectl apply -f client-nod-port.yaml
+
+kubectl get pods
+kubectl get service
+
+minikube ip
+
+
+
