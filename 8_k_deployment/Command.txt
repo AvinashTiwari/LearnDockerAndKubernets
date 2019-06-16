@@ -1,0 +1,7 @@
+kubectl apply -f client-pod.yaml
+
+ kubectl get pods
+
+ kubectl describe pod client-pod
+
+kubectl get deployments
