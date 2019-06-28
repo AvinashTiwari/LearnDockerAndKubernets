@@ -9,3 +9,9 @@ kubectl delete deployment client-deployment
 kubectl delete services client-node-port
 
 kubectl apply -f k8s
+
+ kubectl apply -f k8s
+
+ kubectl apply pods
+
+$ kubectl logs server-deployment-7c7b4bf88-6r79n
