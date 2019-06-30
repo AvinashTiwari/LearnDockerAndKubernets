@@ -15,3 +15,7 @@ kubectl apply -f k8s
  kubectl apply pods
 
 $ kubectl logs server-deployment-7c7b4bf88-6r79n
+
+kubectl create secret generic pgpassword --from-literal PGPASSWORD=1234567
+
+kubectl get secrets
