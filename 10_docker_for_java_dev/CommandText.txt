@@ -1,0 +1,5 @@
+docker image pull virtualpairprogrammers/fleetman-webapp
+docker container run -p 8080:8080 virtualpairprogrammers/fleetman-webapp
+docker container ls
+docker-machine ip
+docker container stop <Id>
