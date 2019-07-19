@@ -1,0 +1,28 @@
+docker image ls
+
+Pick image you want copy
+
+docker container run -it ubuntu
+
+Now in shell
+
+root@76bfe0cfcba7:/# apt-get update
+
+root@76bfe0cfcba7:/# apt-cache search jdk
+
+root@76bfe0cfcba7:/# apt-get install -y openjdk-8-jdk
+
+now 
+exit
+
+run 
+ docker container ls -a
+
+The to create image
+
+76b :- is id of container
+
+docker container commit -a "Avinash Tiwari" 76b myjdkimage
+
+docker container run -it myjdkimage
+
