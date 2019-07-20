@@ -26,3 +26,7 @@ docker container commit -a "Avinash Tiwari" 76b myjdkimage
 
 docker container run -it myjdkimage
 
+====================================
+
+ docker image build -t jdk-image-from-dockerfile .
+
