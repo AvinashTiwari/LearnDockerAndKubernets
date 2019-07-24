@@ -1,0 +1,9 @@
+docker login
+
+docker image ls
+
+docker image tag <id>  849e8029776e
+
+docker image tag  849e8029776e qwe123kids/sample-fleetman-web-test
+
+docker image push qwe123kids/sample-fleetman-web-test
