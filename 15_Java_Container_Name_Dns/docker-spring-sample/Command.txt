@@ -1,0 +1,19 @@
+ docker container run -e MYSQL_ROOT_PASSWORD=password -d mysql:5
+
+docker container ls
+
+docker container logs -f <id>
+
+ docker container exec -it <id>10> bash
+
+after stoping container
+
+docker container <id> stop
+
+docker container run -e MYSQL_ROOT_PASSWORD=password  -e MYSQL_DATABASE=fleetman  -d mysql:5
+
+mysql -uroot -ppassword
+
+docker container run -d -p 80:8080 fleetman-webapp
+
+ docker container exec -it d71 sh (sh becuase alpine)
