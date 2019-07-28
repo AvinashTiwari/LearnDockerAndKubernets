@@ -17,3 +17,12 @@ mysql -uroot -ppassword
 docker container run -d -p 80:8080 fleetman-webapp
 
  docker container exec -it d71 sh (sh becuase alpine)
+
+docker container stop <Id>
+
+docker network ls
+
+docker network create my-network<name of network>
+
+network attachment for databse --network and --name is important
+docker container run --network my-network --name database  -e MYSQL_ROOT_PASSWORD=password -d mysql:5
