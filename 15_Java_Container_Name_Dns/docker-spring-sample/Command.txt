@@ -26,3 +26,7 @@ docker network create my-network<name of network>
 
 network attachment for databse --network and --name is important
 docker container run --network my-network --name database  -e MYSQL_ROOT_PASSWORD=password -d mysql:5
+
+ docker container rm fleetman-webapp
+
+ docker container run -d -p 80:8080 --network my-network --name fleetman-webapp  --rm fleetman-webapp
