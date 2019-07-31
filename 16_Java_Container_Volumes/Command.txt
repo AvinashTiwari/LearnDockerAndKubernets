@@ -1,0 +1,21 @@
+docker container run -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=fleetman mysql:5
+
+docker container exec -it 8b9 bash
+
+root@8b96d6e597c4:/# mysql -ppassword
+
+
+mysql> show databases;
+
+mysql> use fleetman
+Database changed
+mysql> create table temp (temp varchar(255));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql>
+
+ docker container inspect 8b
+
+ docker volume ls
+
+docker volume prune
