@@ -19,3 +19,8 @@ mysql>
  docker volume ls
 
 docker volume prune
+
+docker container run  -v mydata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=fleetman mysql:5
+
+
+docker container run  -v mydata://E/LearnDockerAndKubernets/16_Java_Container_Volumes/volume -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=fleetman mysql:5
