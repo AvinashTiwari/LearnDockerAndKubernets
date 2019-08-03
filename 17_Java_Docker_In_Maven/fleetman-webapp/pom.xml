@@ -193,7 +193,7 @@
 					<!-- Needed if pushing to DockerHub: preferred to store these in local environment (see the course) -->
 					<authConfig>
 						<username>qwe123kids</username>
-						<password>Here_goes_Pasword</password>
+						<password>HERE_IS_PASSWORD</password>
 					</authConfig>
 
 					<images>
@@ -233,6 +233,13 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
 			</plugin>
 
 			<plugin>
