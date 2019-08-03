@@ -4,7 +4,7 @@ MAINTAINER Avinash Tiwari "qwe123kids@gmail.com"
 
 WORKDIR /usr/local/bin/
 
-ADD ./target/fleetman-0.0.1-SNAPSHOT.jar webapp.jar
+ADD maven/fleetman-0.0.1-SNAPSHOT.jar webapp.jar
 
 EXPOSE 8080
 

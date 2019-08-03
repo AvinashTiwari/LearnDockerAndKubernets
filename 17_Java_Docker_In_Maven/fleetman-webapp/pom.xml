@@ -176,7 +176,64 @@
 				<configuration>
                 	<mainClass>com.virtualpairprogrammers.TomcatWARApplication</mainClass>
             	</configuration>
-			</plugin>			
+			</plugin>
+
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.26.0</version>
+
+				<configuration>
+					<!--  <dockerHost>http://127.0.0.1:2375</dockerHost> -->
+					<!--  this is for Mac and Amazon Linux -->
+					<!-- <dockerHost>unix:///var/run/docker.sock</dockerHost> -->
+
+					<verbose>true</verbose>
+
+					<!-- Needed if pushing to DockerHub: preferred to store these in local environment (see the course) -->
+					<authConfig>
+						<username>qwe123kids</username>
+						<password>Here_goes_Pasword</password>
+					</authConfig>
+
+					<images>
+						<image>
+							<name>qwe123kids/fleet-man-webapp-maven</name>
+							<build>
+								<dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
+
+								<!--copies Jar to the maven directory (uses Assembly system)-->
+								<assembly>
+									<descriptorRef>artifact</descriptorRef>
+								</assembly>
+								<tags>
+									<tag>latest</tag>
+								</tags>
+							</build>
+						</image>
+					</images>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>
+							package
+						</phase>
+						<goals>
+							<goal>build</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<fork>true</fork>
+					<executable>C:/Program Files/Java/jdk1.8.0_211/bin/javac</executable>
+				</configuration>
+			</plugin>
+
 		</plugins>
 		
 		<resources>
@@ -187,6 +244,6 @@
 		</resources>
 		
 	</build>
-	
+
 
 </project>
