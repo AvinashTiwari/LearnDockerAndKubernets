@@ -222,6 +222,16 @@
 							<goal>build</goal>
 						</goals>
 					</execution>
+
+					<execution>
+						<id>Myid</id>
+						<phase>
+							deploy
+						</phase>
+						<goals>
+							<goal>push</goal>
+						</goals>
+					</execution>
 				</executions>
 			</plugin>
 
