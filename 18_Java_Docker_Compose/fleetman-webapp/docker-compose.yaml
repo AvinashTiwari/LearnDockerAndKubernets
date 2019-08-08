@@ -2,7 +2,7 @@ version: "3"
 
 services:
   fleetman-webapp:
-    image: qwe123kids/fleetman-webapp
+    image: virtualpairprogrammers/fleetman-production
     networks:
       - fleetman-network
     ports:
@@ -15,9 +15,9 @@ services:
     networks:
       - fleetman-network
     environment:
-      - MYSQL_ROOT_PASSWORD : password
-      - MYSQL_DATABASE : fleet-man
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=fleetman
 
-network:
+networks:
   fleetman-network:
 

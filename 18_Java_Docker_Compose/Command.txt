@@ -1,3 +1,5 @@
 docker network create fleetman-network
 
 docker container run -d --network fleetman-network --name database -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=fleetman mysql
+
+docker-compose up
