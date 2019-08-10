@@ -1,0 +1,16 @@
+docker container ls
+
+docker container ls -a
+
+docker container prune
+
+docker swarm init
+
+
+docker network  rm fleetman-network
+ docker network create --driver overlay fleetman-network
+
+docker service create -d --network fleetman-network -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=fleetman --name database mysql:5
+
+ docker service ls
+
