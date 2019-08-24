@@ -1,0 +1,6 @@
+Kubectl get all
+Kubectl apply -f first-pod.yaml
+minikube ip
+Kubectl describe pod webapp
+kubectl exec webapp ls
+kubectl -it exec webapp sh
