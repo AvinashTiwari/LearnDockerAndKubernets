@@ -1,1 +1,3 @@
 kubectl get all
+
+kubectl apply -f webapp-service.yaml
