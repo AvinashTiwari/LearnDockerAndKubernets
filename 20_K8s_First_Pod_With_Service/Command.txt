@@ -1,3 +1,9 @@
 kubectl get all
 
 kubectl apply -f webapp-service.yaml
+
+kubectl apply -f first-pod.yaml
+
+>kubectl describe service fleetman-webapp
+
+kubectl get po --show-labels
