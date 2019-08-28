@@ -1,0 +1,5 @@
+kubectl apply -f .
+
+kubectl get all
+
+kubectl describe pod queue
