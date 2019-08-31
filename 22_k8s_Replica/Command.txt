@@ -1,0 +1,1 @@
+kubectl delete po webapp-release-0-5
