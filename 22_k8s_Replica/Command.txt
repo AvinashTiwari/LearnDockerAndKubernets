@@ -1,1 +1,11 @@
 kubectl delete po webapp-release-0-5
+
+kubectl delete po --all
+
+kubectl get all
+
+kubectl apply -f pods.yaml
+
+>kubectl describe replicaset webapp
+
+kubectl apply -f services.yaml
