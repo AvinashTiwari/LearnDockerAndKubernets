@@ -1,0 +1,3 @@
+kubectl delete rs webapp
+
+>kubectl apply -f pods.yaml
