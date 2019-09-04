@@ -1,3 +1,7 @@
 kubectl delete rs webapp
 
 >kubectl apply -f pods.yaml
+
+>kubectl rollout status deployment webapp
+
+kubectl rollout history deployment webapp
