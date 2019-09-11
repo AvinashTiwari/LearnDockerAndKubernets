@@ -1,0 +1,5 @@
+kubectl apply -f networking-tests.yaml
+
+>kubectl get all
+
+>kubectl exec -it webapp-564995b856-hzwbk sh
