@@ -1,0 +1,7 @@
+>kubectl get all
+
+>kubectl get all
+
+kubectl apply -f workloads.yaml
+
+kubectl apply -f services.yaml
