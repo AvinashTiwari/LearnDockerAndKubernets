@@ -2,6 +2,6 @@
 
 docker network inspect bridge
 
-docker network create my_app_net1
+docker network create my_app_net2
 
-docker container run -d --name new_ngnixss --network my_app_net1 nginx
+docker container run -d --name new_ngnixssxs --network my_app_net2 nginx
