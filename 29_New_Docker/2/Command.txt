@@ -1,0 +1,5 @@
+docker build -t img_run-env .
+
+docker run -itd --name cont_rub-env img_run-env
+
+docker exec -it cont_run-env bash
