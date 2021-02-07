@@ -2,3 +2,4 @@ docker build -t imh_expose .
 
 docker run -itd --rm --name cont_expose -p 8080:80 imh_expose
 
+docker ps -a
