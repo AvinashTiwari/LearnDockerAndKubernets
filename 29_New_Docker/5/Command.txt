@@ -1,0 +1,8 @@
+
+
+docker build -f parent-Docker -t papa-ubuntu .
+docker build -f child-DockerFile -t baby-ubuntu .
+
+docker run -itd --name baby-container baby-ubuntu
+
+docker exec -it baby-container bash
