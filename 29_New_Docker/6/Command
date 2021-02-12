@@ -1,0 +1,5 @@
+docker build -t flask-app .
+
+docker run --rm -itd --name flask -p 5000:5000 flask-app
+
+docker run --rm -itd --name flask -p 5000:5000 flask-app
