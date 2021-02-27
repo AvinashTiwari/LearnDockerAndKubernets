@@ -4,3 +4,8 @@ docker ps -a
 
 docker container run -itd --name cc-busybox_B busybox:latest
 docker container run -itd --rm --name cc-busybox_B busybox:latest
+docker container start cc-busybox-A
+docker ps -a
+>docker container stop cc-busybox_B
+docker container restart --time 5   cc-busybox-A
+docker container rename cc-busybox-A my-busybox
