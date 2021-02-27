@@ -1,0 +1,6 @@
+docker container create -it --name cc-busybox-A busybox:latest
+
+docker ps -a
+
+docker container run -itd --name cc-busybox_B busybox:latest
+docker container run -itd --rm --name cc-busybox_B busybox:latest
