@@ -9,3 +9,5 @@ docker ps -a
 >docker container stop cc-busybox_B
 docker container restart --time 5   cc-busybox-A
 docker container rename cc-busybox-A my-busybox
+docker container attach my-busybox
+>docker exec -it  my-busybox pwd
